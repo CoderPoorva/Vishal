@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  font-family: "Cursive, sans-serif";
+  text-align: center;
+  background: url("/src/image/bg3.jpg") center/cover no-repeat;
+  opacity: 90%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.app-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.749); /* Light transparent overlay */
+  z-index: -1; /* Keep it behind everything */
+}
+
+h2 {
+  color: #fff;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.welcome-screen h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px #000;
+  z-index: 2;
+}
+
+.next-button {
+  background-color: #ee7c72;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.Play-btn {
+  background-color: #011850;
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 2rem;
+  margin-top: 15px;
+}
+
+.next-button:hover {
+  background-color: #e85c4f;
+}
+
+.envelope-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.envelope .image-container {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  cursor: pointer;
+}
+
+.letter {
+  background: white;
+  color: black;
+  border: 1px solid #ddd;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.poem-screen h2 {
+  color: #fff;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.poem-screen p {
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 20px;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.couple-image {
+  max-width: 50%;
+  height: auto;
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.love-text {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  animation: heartbeat 2s infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 10px;
+  }
+
+  .welcome-screen h1 {
+    font-size: 2.5rem;
+  }
+
+  .next-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .Play-btn {
+    width: 30px;
+    height: 30px;
+  }
+
+  .envelope {
+    width: 80px;
+    height: 60px;
+    margin-bottom: 2rem;
+    cursor: pointer;
+  }
+
+  .envelope .image-container {
+    width: 80px;
+    height: 60px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .letter {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  .poem-screen p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .love-text {
+    font-size: 2.5rem;
+  }
+
+  .couple-image {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .love-text {
+    font-size: 2rem;
+  }
+
+  .couple-image {
+    max-width: 80%;
+  }
+}
+
