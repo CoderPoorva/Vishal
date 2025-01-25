@@ -14,17 +14,18 @@ const App = () => {
 
   const nextStep = () => setStep(step + 1);
 
-  const [audio] = useState(
-    new Audio("../public/Audio/bgmusic.m4a")
-  );
+  const [audio] = useState(new Audio("../public/Audio/bgmusic.m4a"));
+  
+
   const startAudio = () => {
     audio.play();
+    console.log("audio played");
   };
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowButton(true);
-    }, 10000); // 5 seconds delay
+    }, 10000); 
 
     return () => clearTimeout(timer); 
   }, []);
@@ -60,6 +61,7 @@ const App = () => {
           <div className="audio-player" style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
           <button className="Play-btn" onClick={startAudio}>
             <PlayCircleOutlineRoundedIcon style={{fontSize:"2rem"}}/>
+            play
           </button>
           {showButton && <button className="next-button" onClick={nextStep}>
            Next
