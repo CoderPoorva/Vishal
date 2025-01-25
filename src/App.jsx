@@ -14,7 +14,7 @@ const App = () => {
 
   const nextStep = () => setStep(step + 1);
 
-  const [audio] = useState(new Audio("../public/Audio/bgmusic.m4a"));
+  const [audio] = useState(new Audio("../public/Audio/bgmusic.mp3"));
   
 
   const startAudio = () => {
