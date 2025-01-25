@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import PlayCircleOutlineRoundedIcon from '@mui/icons-material/PlayCircleOutlineRounded';
 import Confetti from "react-confetti";
+import Envelope from "../public/image/envelope.png";
+import Couple from "../public/image/Couple.jpg";
+// import { Audio } from "../public/Audio/bgmusic.m4a";
 
 const App = () => {
   const [step, setStep] = useState(-1);
@@ -12,7 +15,7 @@ const App = () => {
   const nextStep = () => setStep(step + 1);
 
   const [audio] = useState(
-    new Audio("/public/Audio/bgmusic.m4a")
+    new Audio("../public/Audio/bgmusic.m4a")
   );
   const startAudio = () => {
     audio.play();
@@ -95,7 +98,7 @@ const App = () => {
         <div className="envelope-screen">
           <div className="envelope" onClick={nextStep}>
             <img
-              src="/public/image/envelope.png"
+              src={Envelope}
               alt=""
               style={{ width: "100px" }}
             />
@@ -171,7 +174,7 @@ const App = () => {
         <div className="end-screen">
           <div className="image-container" style={{display:"flex",justifyContent:"center",alignItems:"center", marginBottom: "20px"}}>
         <img
-          src="/public/image/Couple.jpg"
+          src={Couple}
           alt="Couple"
           className="couple-image"
         />
