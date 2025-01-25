@@ -12,9 +12,8 @@ const App = () => {
   const nextStep = () => setStep(step + 1);
 
   const [audio] = useState(
-    new Audio("src/Audio/Notun-Premer-Gaan-From-Ballabhpurer-Roopkotha-Debraj-Bhattacharya-Surangana-Bandyopadhyay.m4a")
+    new Audio("/Notun-Premer-Gaan-From-Ballabhpurer-Roopkotha-Debraj-Bhattacharya-Surangana-Bandyopadhyay.m4a")
   );
-
   const startAudio = () => {
     audio.play();
   };
@@ -96,7 +95,7 @@ const App = () => {
         <div className="envelope-screen">
           <div className="envelope" onClick={nextStep}>
             <img
-              src="src/image/envelope.png"
+              src="/envelope.png"
               alt=""
               style={{ width: "100px" }}
             />
@@ -172,7 +171,7 @@ const App = () => {
         <div className="end-screen">
           <div className="image-container" style={{display:"flex",justifyContent:"center",alignItems:"center", marginBottom: "20px"}}>
         <img
-          src="src/image/couple.jpg"
+          src="/couple.jpg"
           alt="Couple"
           className="couple-image"
         />
