@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +9,7 @@
 .app-container {
   font-family: "Cursive, sans-serif";
   text-align: center;
-  background: url("/src/image/bg3.jpg") center/cover no-repeat;
+  background: url("/public/image/bg3.jpg") center/cover no-repeat;
   opacity: 90%;
   min-height: 100vh;
   display: flex;
