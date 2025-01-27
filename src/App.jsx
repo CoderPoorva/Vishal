@@ -13,6 +13,10 @@ const App = () => {
 
   const nextStep = () => setStep(step + 1);
 
+  const nextReject = () => {
+    alert("Sure?? But you have to click YES 😂")
+  }
+
   const [audio] = useState(new Audio("/Audio/bgmusic.mp3"));
 
   const startAudio = () => {
@@ -58,7 +62,7 @@ const App = () => {
 
       {step === 0 && (
         <div className="welcome-screen">
-          <h1>Let's Play the Music</h1>
+          <h1>Let's Play The Music</h1>
           <div
             className="audio-player"
             style={{
@@ -85,8 +89,11 @@ const App = () => {
             Hey " pasandida aurat " 💗 I want to tell you something. Is your
             excitement the same as mine?
           </h2>
+          <button className="next-button" onClick={nextReject}>
+            NO
+          </button>
           <button className="next-button" onClick={nextStep}>
-            Next
+            YES
           </button>
         </div>
       )}
@@ -98,8 +105,11 @@ const App = () => {
             taken me two years to realize I have feelings for you 🥰. Do you
             have that one feeling for me  👉👈?
           </h2>
+          <button className="next-button" onClick={nextReject}>
+            NO
+          </button>
           <button className="next-button" onClick={nextStep}>
-            Next
+            YES
           </button>
         </div>
       )}
@@ -136,8 +146,11 @@ const App = () => {
             <p>With all my love,</p>
             <p>Vishal</p>
           </div>
-          <button onClick={handleClick} className="next-button">
-            Next
+          <button className="next-button" onClick={nextReject}>
+            NO
+          </button>
+          <button className="next-button" onClick={nextStep}>
+            YES
           </button>
         </div>
       )}
@@ -179,8 +192,11 @@ const App = () => {
             তোমাকে ছাড়া আমি দিশেহারা ।
             <br />
           </p>
+          <button className="next-button" onClick={nextReject}>
+            NO
+          </button>
           <button className="next-button" onClick={nextStep}>
-            Next
+            For, one last time, YES
           </button>
         </div>
       )}

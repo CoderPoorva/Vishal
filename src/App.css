@@ -9,8 +9,8 @@
 .app-container {
   font-family: "Cursive, sans-serif";
   text-align: center;
-  background: url("/public/image/bg3.jpg") center/cover no-repeat;
-  opacity: 90%;
+  background: url("/public/image/bg.jpg") center/cover no-repeat;
+  opacity: 95%;
   min-height: 120vh;
   display: flex;
   flex-direction: column;
