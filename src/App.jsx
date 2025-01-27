@@ -225,7 +225,7 @@ const App = () => {
         position: "fixed",
         bottom: 0,
         width: "100%",
-        fontSize: "1.5rem",
+        fontSize: "1.2rem",
       }}>
         <p>Made with ❤️ by Poorva</p>
       </footer>
