@@ -4,7 +4,7 @@ import PlayCircleOutlineRoundedIcon from '@mui/icons-material/PlayCircleOutlineR
 import Confetti from "react-confetti";
 import Envelope from "../public/image/envelope.png";
 import Couple from "../public/image/Couple.jpg";
-// import { Audio } from "../public/Audio/bgmusic.m4a";
+// import Audio from "../public/Audio/bgmusic.mp3";
 
 const App = () => {
   const [step, setStep] = useState(-1);
@@ -14,7 +14,7 @@ const App = () => {
 
   const nextStep = () => setStep(step + 1);
 
-  const [audio] = useState(new Audio("../public/Audio/bgmusic.mp3"));
+  const [audio] = useState(new Audio("/src/assets/Audio/bgmusic.mp3"));
   
 
   const startAudio = () => {
@@ -61,7 +61,6 @@ const App = () => {
           <div className="audio-player" style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
           <button className="Play-btn" onClick={startAudio}>
             <PlayCircleOutlineRoundedIcon style={{fontSize:"2rem"}}/>
-            play
           </button>
           {showButton && <button className="next-button" onClick={nextStep}>
            Next
