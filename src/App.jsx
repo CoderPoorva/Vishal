@@ -196,7 +196,7 @@ const App = () => {
             NO
           </button>
           <button className="next-button" onClick={nextStep}>
-            For, one last time, YES
+            YES
           </button>
         </div>
       )}
@@ -220,11 +220,12 @@ const App = () => {
         backgroundColor: "#333",
         color: "#fff",
         textAlign: "center",
-        padding: "5px 0",
+        padding: "15px 0",
         fontSize: "14px",
         position: "fixed",
         bottom: 0,
         width: "100%",
+        fontSize: "1.5rem",
       }}>
         <p>Made with ❤️ by Poorva</p>
       </footer>
